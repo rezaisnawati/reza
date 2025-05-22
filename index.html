@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS Kota Bandung</title>
+    <link rel="stylesheet" href="CSS/style.css"> 
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Leaflet Plugins -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-easybutton@2.4.0/src/easy-button.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Header -->
+<header id="navbar"> 
+  <div class="container"> 
+    <div class="logo"> 
+      <img src="ASSET/logo.png" alt="Logo" width="100"> 
+      <h1>WebGIS Kota Bandung</h1> 
+    </div> 
+    <nav> 
+      <ul> 
+        <li><a href="#hero-section">Home</a></li> 
+        <li><a href="#map-section">Map</a></li> 
+        <li><a href="#data-section">Data</a></li> 
+        <li><a href="#author-section">Author</a></li> 
+        <li><a href="#footer">Contact</a></li> 
+      </ul> 
+    </nav> 
+  </div> 
+</header> 
+
+<!-- Hero Section -->
+<div id="hero-section" class="hero-section"> 
+    <div class="hero-content"> 
+        <h1>WebGIS Basis Data Spasial Kota Bandung</h1> 
+        <p>Halaman untuk Melakukan Eksplorasi Basis Data Spasial di Kota Bandung</p> 
+    </div> 
+</div>
+
+<!-- Map Section -->
+<div id="map-section"> 
+  <h2 style="text-align: center;">Jelajahi WebGIS Basis Data Spasial Kota Bandung</h2> 
+  <div id="map"></div>
+</div>
+
+<!-- Data Section -->
+<div id="data-section"> 
+    <h2>Data Tersedia</h2> 
+    <div class="container"> 
+        <div class="column"> 
+            <div class="data-item"> 
+                <img src="ASSET/image 1.png" alt="Image 2"> 
+                <div class="description"> 
+                    <h3>Julukan "Kota Kembang"</h3> 
+                    <p>Bandung dikenal sebagai Kota Kembang karena dulu banyak dipenuhi taman-taman dan bunga-bunga indah. Julukan ini juga mencerminkan bahwa Bandung dianggap cantik, baik dari suasana kotanya maupun penduduknya.</p> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="column"> 
+            <div class="data-item"> 
+                <img src="ASSET/images 1.jpeg" alt="Image 3"> 
+                                    <div class="description"> 
+                                        <h3>Sejarah Pendidikan</h3> 
+                                        <p>Bandung adalah pusat pendidikan di Indonesia. Salah satunya dengan berdirinya Institut Teknologi Bandung (ITB) pada 1920, yang merupakan salah satu kampus teknik tertua dan paling bergengsi di Indonesia.</p> 
+                                    </div> 
+                                </div> 
+                            </div> 
+ </div> 
+    </div>
+
+
+<!-- Author Section -->
+<div id="author-section"> 
+    <div class="author-content"> 
+        <h2>Tentang Pembuat</h2> 
+        <img src="ASSET/author-picture.jpeg" alt="Profile Picture" class="profile-picture"> 
+        <div class="author-name"> 
+            <h3>Reza Isnawati</h3> 
+        </div> 
+        <p>Seorang mahasiswa dari program studi Sains Informasi Geografi (SaIG) di Universitas Pendidikan Indonesia. Saat ini memiliki minat pada SIG, penginderaan jauh, 
+WebGIS, dan SIG untuk mitigasi bencana dan termotivasi untuk terus belajar dan berkembang sebagai 
+analis SIG.</p> 
+    </div> 
+</div>
+
+<!-- Footer -->
+<div id="footer"> 
+  <div class="footer-content"> 
+    <h3>Hubungi Saya</h3> 
+    <p>Email: rezaisnawati2005@gmail.com</p> 
+    <p>Phone: +63117659117</p> 
+  </div> 
+</div> 
+<!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Leaflet Plugin JS -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+    <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+    <script src="https://balladaniel.github.io/leaflet-dataclassification/leaflet-dataclassification.js"></script>
+    
+    <!-- jQuery untuk AJAX requests -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Script utama -->
+    <script src="script.js"></script>
+
+
+
+
+</body>
+</html>
